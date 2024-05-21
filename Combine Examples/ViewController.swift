@@ -78,6 +78,7 @@ class ViewController: UIViewController {
             .sink(receiveCompletion: { completion in
                 // This completion block is the status of completion of publisher.
                 // It lets us know if the Future func finishes or gets error.
+                // This closure happens after "receive value" clousre.
                 switch completion {
                 case .finished:
                     print("Finished Future Func")
